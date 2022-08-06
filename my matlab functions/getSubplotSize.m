@@ -1,4 +1,4 @@
-function N = findSubplotSize(k)
+function N = getSubplotSize(k)
 % ** description **
 % takes the number of images k and returns a field N which contains the
 % SUBPLOT shape that is convenient for displaying the n images in a

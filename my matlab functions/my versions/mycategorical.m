@@ -6,7 +6,7 @@ function x = mycategorical(x,varargin)
 % functions). The remaining variables keep their order relative to one
 % another.
 
-% ***£££ managing arguments £££***
+% *** ¤¤¤ Managing arguments ¤¤¤ ***
 p = inputParser;
 % *** required parameters ***
 addRequired(p,'x');

@@ -2,8 +2,8 @@ function out = color2triplet(color)
 % maps color string to RGB triplet.
 if nargin==0
     strcat(sprintf(' orange\n teal\n purple\n darkpurple\n pink'),...
-        sprintf(' pink\n darkgreen\n lightgreen\n lightblue\n'),...
-        sprintf(' darkblue\n darkred\n grey\n darkgrey\n lightgrey'))
+           sprintf(' pink\n darkgreen\n lightgreen\n lightblue\n'),...
+           sprintf(' darkblue\n darkred\n grey\n darkgrey\n lightgrey'))
 else
     if isnumeric(color)
         out = color;
@@ -20,9 +20,9 @@ else
         elseif color == "orange"
             out = [255,106,0]/255;
         elseif color=="brown"
-            out = [101 61 33];
+            out = [101 61 33]/255;
         elseif color == "teal"
-            out = [0,255,255];
+            out = [0,255,255]/255;
         elseif color == "purple"
             out = [127,0,110]/255;
         elseif color == "darkpurple"

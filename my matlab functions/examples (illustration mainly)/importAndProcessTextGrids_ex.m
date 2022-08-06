@@ -5,12 +5,11 @@ function [tg_new,badQ] = importAndProcessTextGrids_ex(tg_id, annotator, folderIn
 p = inputParser;
 addOptional(p, 'ShowStates', false, @(x) islogical(x));
 parse(p,varargin{:});
-% Get the number of name-value-pair arguments:
+% Get the number of name-value-pair and positional arguments:
 NnumvalPairArgs = numel(p.Parameters) - numel(p.UsingDefaults);
+NposNargin      = nargin - 2*NnumvalPairArgs;
 
 %% optional positional arguments
-% get number of positional arguments:
-NposNargin = nargin - 2*NnumvalPairArgs;
 if NposNargin==1
     annotator = "_anno";
     folderInd = folderIndex(tg_id);

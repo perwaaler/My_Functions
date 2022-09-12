@@ -16,7 +16,7 @@ end
 if displayStyle=="decimal"
     ci       = round(ci,NsigDig-1);
     estimate = round(estimate,NsigDig);
-else
+elseif displayStyle=="percentage"
     ci       = round(100*ci,NsigDig-1);
     estimate = round(100*estimate,NsigDig);
 end
@@ -26,6 +26,6 @@ if CiDisplayStyle=="full"
     
 elseif CiDisplayStyle=="plusminus"
     deviation = ci(2) - mean(ci);
-    displayStr = sprintf('%g (+/-%g)',estimate,deviation);
+    displayStr = sprintf('%g +/-%g',estimate,deviation);
 end
 end
